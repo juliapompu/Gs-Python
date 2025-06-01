@@ -1,15 +1,15 @@
 # --------------------------------------------------------------
-# Nome: [Seu Nome] - RM: [Seu RM]
-# Nome: [Nome do Colega] - RM: [RM do Colega] (se houver)
+# Nome: Julia Souza Pompeu - RM: 561955
+# Nome: Giovana Rosatti Parreira - RM: 562275
 # Projeto: Sistema de Monitoramento e Alerta de Enchentes
 # --------------------------------------------------------------
 
-# Dados simulados de regiões e seus níveis de risco
+# Dados imaginarios para o programa funcionar
 regioes = ["Centro", "Norte", "Sul", "Leste", "Oeste"]
-nivel_rios = [2.5, 3.0, 4.2, 1.8, 3.5]  # metros
-chuvas = [50, 80, 120, 40, 100]          # mm nas últimas 24h
+nivel_rios = [2.5, 3.0, 4.2, 1.8, 3.5] 
+chuvas = [50, 80, 120, 40, 100] 
 
-# Função para exibir o menu principal
+# Exibe o menu principal
 def exibir_menu():
     print("\n----Sistema de Monitoramento de Enchentes---")
     print("1 - Verificar situação de uma região")
@@ -45,7 +45,7 @@ def verificar_regiao():
     except ValueError:
         print("Entrada inválida! Digite um número.")
 
-# Função para atualizar dados de uma região
+# Função que atualiza os dados quando você atualiza
 def atualizar_dados():
     print("\nRegiões disponíveis para atualizar:")
     for i, r in enumerate(regioes):
@@ -56,8 +56,7 @@ def atualizar_dados():
             indice = escolha - 1
             novo_nivel = float(input("Informe o novo nível do rio (em metros): "))
             nova_chuva = float(input("Informe a quantidade de chuva nas últimas 24h (em mm): "))
-            
-            # Validação dos dados
+          
             if novo_nivel < 0 or nova_chuva < 0:
                 print("Valores inválidos! Não podem ser negativos.")
                 return
@@ -70,7 +69,7 @@ def atualizar_dados():
     except ValueError:
         print("Entrada inválida! Utilize apenas números.")
 
-# Função para gerar relatório geral
+# Função para mostra o relatorio geral
 def relatorio_geral():
     print("\n===== Relatório Geral de Risco =====")
     for i in range(len(regioes)):
@@ -100,5 +99,4 @@ def main():
         except ValueError:
             print("Entrada inválida! Digite um número.")
 
-# Iniciar o programa
 main()
