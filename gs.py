@@ -11,6 +11,7 @@ chuvas = [50, 80, 120, 40, 100]
 
 # Exibe o menu principal
 def exibir_menu():
+    print("\n----S.O.S Enchentes aqui para te ajudar!----")
     print("\n----Sistema de Monitoramento de Enchentes---")
     print("1 - Verificar situação de uma região")
     print("2 - Atualizar dados de uma região")
