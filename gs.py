@@ -72,7 +72,7 @@ def atualizar_dados():
 
 # Função para mostra o relatorio geral
 def relatorio_geral():
-    print("\n===== Relatório Geral de Risco =====")
+    print("\n ---- Relatório Geral de Risco ----")
     for i in range(len(regioes)):
         risco = calcular_risco(nivel_rios[i], chuvas[i])
         print(f"Região: {regioes[i]}")
