@@ -1,7 +1,7 @@
 # --------------------------------------------------------------
 # Nome: Julia Souza Pompeu - RM: 561955
 # Nome: Giovana Rosatti Parreira - RM: 562275
-# Projeto: Sistema de Monitoramento e Alerta de Enchentes
+# Projeto: S.O.S Enchentes- Sistema de Monitoramento e Alerta de Enchentes
 # --------------------------------------------------------------
 
 # Dados imaginarios para o programa funcionar
